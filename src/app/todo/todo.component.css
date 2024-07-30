@@ -1,0 +1,23 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+
+}
+
+form .form-group {
+  margin-bottom: 1rem;
+ 
+}
+
+ul.list-group {
+  margin-top: 2rem;
+}
+
+.done {
+  text-decoration: line-through;
+}
+button{
+    align-self: flex-end;
+}
+

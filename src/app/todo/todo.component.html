@@ -1,0 +1,21 @@
+<div class="container mt-5">
+    <h2 class="text-center">Todo App</h2>
+    
+    <form [formGroup]="todoForm" (ngSubmit)="onSubmit()" class="mb-3">
+      <div class="form-group d-flex" >
+        <input type="text" formControlName="task" class="form-control me-2" placeholder="Enter your task">
+        <button type="submit" class="btn btn-primary " [disabled]="todoForm.invalid">+</button>
+      </div>
+      
+    </form>
+  <div class="d-flex form-list justify-content-center" >
+    <ul class="list-group">
+      <li *ngFor="let todo of todos; let i = index" class="list-group-item d-flex ">
+        <input type="checkbox" (change)="toggleDone(i)" [checked]="todo.done" class="px-3">
+        <span [ngClass]="{'done': todo.done}"class="px-3">{{ todo.task }}</span> 
+        <button class="btn btn-danger btn-sm " (click)="removeTask(i)">-</button>
+      </li>
+    </ul>
+</div>
+  </div>
+  

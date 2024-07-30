@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('https://image.freepik.com/free-photo/top-view-desk-with-coffee-plant-laptop_23-2148110227.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
